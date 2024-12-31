@@ -1,0 +1,272 @@
+# RESETS
+/difficulty easy
+/defaultgamemode adventure
+/gamerule keepInventory true
+/gamerule commandBlockOutput true
+/setblock 311 70 -421 minecraft:air replace
+/setblock 300 70 -419 minecraft:air replace
+/setblock 323 70 -423 minecraft:air replace
+/setblock 319 69 -421 minecraft:air replace
+/setblock 319 69 -425 minecraft:air replace
+/setblock 319 69 -425 minecraft:air replace
+/setblock 300 72 -423 minecraft:iron_door[half=lower, facing=west]
+/setblock 300 73 -423 minecraft:iron_door[half=upper, facing=west]
+/setblock 298 72 -417 minecraft:chest replace
+/data modify block 298 72 -417 Items append value {id:"mace",Count:1}
+/setblock 283 79 -408 minecraft:spruce_pressure_plate replace
+/setblock 281 79 -406 minecraft:stripped_spruce_log replace
+/setblock 281 80 -406 minecraft:stripped_spruce_log replace
+/data modify entity @e[type=armor_stand, x=288, y=79, z=-425, dx=0, dy=0, dz=0, limit=1] ArmorItems[3] set value {id:"minecraft:air",Count:1b}
+/data modify entity @e[type=armor_stand, x=290, y=79, z=-425, dx=0, dy=0, dz=0, limit=1] ArmorItems[3] set value {id:"minecraft:air",Count:1b}
+/setblock 289 76 -426 minecraft:air replace
+/data remove entity @e[type=item_frame, x=303, y=84, z=-424, dx=0, dy=0, dz=0, limit=1] Item
+/data remove entity @e[type=item_frame, x=304, y=84, z=-424, dx=0, dy=0, dz=0, limit=1] Item
+/data remove entity @e[type=item_frame, x=305, y=84, z=-424, dx=0, dy=0, dz=0, limit=1] Item
+/data remove entity @e[type=item_frame, x=306, y=84, z=-424, dx=0, dy=0, dz=0, limit=1] Item
+/setblock 304 80 -425 minecraft:air replace
+/setblock 305 80 -425 minecraft:air replace
+/setblock 297 81 -435 minecraft:glass replace
+/setblock 297 82 -435 minecraft:cake replace
+/setblock 295 80 -448 redstone_block replace
+/setblock 295 79 -448 redstone_block replace
+/setblock 294 80 -442 redstone_block replace
+/setblock 294 79 -442 redstone_block replace
+/setblock 230 63 -451 redstone_block replace
+
+/tp makiwara 245 66 -396
+
+
+
+
+
+#
+/give @p flint_and_steel[unbreakable={}, can_place_on={predicates:[{blocks:"obsidian"}]}] 
+/give @p bow[unbreakable={}] 
+
+# Start!
+/tp @p 312 72 -418
+/title @p title {"text":"You slowly awaken...","color":"gold","bold":true}
+/gamerule doMobSpawning false
+/difficulty peaceful
+/difficulty hard
+/summon minecraft:zombie_villager 324 71 -422 {CustomName:"\"James\""}
+/summon minecraft:zombie_villager 320 71 -420 {CustomName:"\"John\""}
+/summon minecraft:zombie_villager 319 71 -427 {CustomName:"\"Joseph\""}
+/summon minecraft:zombie_villager 312 72 -426 {CustomName:"\"Joe\""}
+/defaultgamemode adventure
+/setblock 311 70 -421 minecraft:air replace
+
+
+# Dungeon Open Doors
+/summon minecraft:zombie_villager 278 84 -427 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 269 84 -428 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 265 84 -423 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 265 84 -412 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 265 84 -402 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 280 84 -387 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 302 84 -387 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 314 84 -403 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 313 84 -408 {CustomName:"\"Footman\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie_villager 289 79 -423 {CustomName:"\"Blacksmith\""}
+/summon minecraft:zombie_villager 284 84 -414 {CustomName:"\"Farmer\""}
+/summon minecraft:zombie_villager 278 79 -405 {CustomName:"\"Farmer\""}
+/summon minecraft:zombie_villager 284 79 -417 {CustomName:"\"Farmer\""}
+
+# Castle Open Doors
+/summon minecraft:zombie_villager 301 80 -442 {CustomName:"\"Butler\""}
+/summon minecraft:zombie_villager 289 80 -443 {CustomName:"\"Cook\""}
+/summon minecraft:zombie_villager 302 89 -427 {CustomName:"\"Maid\""}
+/summon minecraft:zombie_villager 293 85 -424 {CustomName:"\"Maid\""}
+/summon minecraft:zombie 304 94 -441 {CustomName:"\"Ahr\""}
+/summon minecraft:zombie 308 94 -435 {CustomName:"\"Ugf\""}
+/summon minecraft:zombie 301 94 -427 {CustomName:"\"Eeht\""}
+/summon minecraft:zombie 309 94 -446 {CustomName:"\"T'rea\""}
+
+# Fireplace Open Doors
+/summon minecraft:zombified_piglin 291 68 -444 {CustomName:"\"Protector\"", ArmorItems:[{id:"minecraft:golden_helmet",Count:1},{id:"minecraft:diamond_chestplate",Count:1}],HandItems:[{id:"minecraft:golden_sword",Count:1}]}
+/summon minecraft:zombified_piglin 291 68 -445 {CustomName:"\"Protector\"", ArmorItems:[{id:"minecraft:golden_helmet",Count:1},{id:"minecraft:diamond_chestplate",Count:1}],HandItems:[{id:"minecraft:golden_sword",Count:1}]}
+/summon minecraft:zombified_piglin 292 68 -444 {CustomName:"\"Protector\"", ArmorItems:[{id:"minecraft:golden_helmet",Count:1},{id:"minecraft:diamond_chestplate",Count:1}],HandItems:[{id:"minecraft:golden_sword",Count:1}]}
+/summon minecraft:zombified_piglin 292 68 -445 {CustomName:"\"Protector\"", ArmorItems:[{id:"minecraft:golden_helmet",Count:1},{id:"minecraft:diamond_chestplate",Count:1}],HandItems:[{id:"minecraft:golden_sword",Count:1}]}
+/summon minecraft:zombified_piglin 293 68 -444 {CustomName:"\"Protector\"", ArmorItems:[{id:"minecraft:golden_helmet",Count:1},{id:"minecraft:diamond_chestplate",Count:1}],HandItems:[{id:"minecraft:golden_sword",Count:1}]}
+/summon minecraft:zombified_piglin 293 68 -445 {CustomName:"\"Protector\"", ArmorItems:[{id:"minecraft:golden_helmet",Count:1},{id:"minecraft:diamond_chestplate",Count:1}],HandItems:[{id:"minecraft:golden_sword",Count:1}]}
+
+
+
+# Part 1: Dungeon
+## Open your cell (set locally)
+/setblock 311 70 -421 minecraft:redstone_torch replace
+/title @a title {"text":"Cell 13 unlocked.","color":"green"}
+
+## Check for discs
+### Row 1
+/execute if block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_cat"}]}
+/execute if block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_blocks"}]}
+/execute if block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_chirp"}]}
+/execute if block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_far"}]}
+/execute if block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_mall"}]}
+/execute if block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_mellohi"}]}
+/execute unless block 300 70 -419 minecraft:redstone_torch
+/setblock 300 70 -419 minecraft:redstone_torch replace
+/title @a title {"text":"Storage unlocked.","color":"green"}
+### Row 2
+/execute unless block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_cat"}]} run setblock 300 70 -419 minecraft:air replace
+/execute unless block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_blocks"}]} run setblock 300 70 -419 minecraft:air replace
+/execute unless block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_chirp"}]} run setblock 300 70 -419 minecraft:air replace
+/execute unless block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_far"}]} run setblock 300 70 -419 minecraft:air replace
+/execute unless block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_mall"}]} run setblock 300 70 -419 minecraft:air replace
+/execute unless block 300 73 -418 minecraft:barrel{Items:[{id:"minecraft:music_disc_mellohi"}]} run setblock 300 70 -419 minecraft:air replace
+
+### Row 3 (25)
+/execute if block 303 74 -427 minecraft:lever[powered=true]
+/execute if block 304 74 -427 minecraft:lever[powered=true]
+/execute if block 306 74 -427 minecraft:lever[powered=false]
+/execute if block 307 74 -427 minecraft:lever[powered=true]
+/execute unless block 311 70 -425 minecraft:redstone_torch
+/setblock 311 70 -425 minecraft:redstone_torch replace
+/title @a title {"text":"Cell 25 unlocked.","color":"green"}
+
+/execute unless block 303 74 -427 minecraft:lever[powered=true] run setblock 311 70 -425 minecraft:air replace
+/execute unless block 304 74 -427 minecraft:lever[powered=true] run setblock 311 70 -425 minecraft:air replace
+/execute unless block 306 74 -427 minecraft:lever[powered=false] run setblock 311 70 -425 minecraft:air replace
+/execute unless block 307 74 -427 minecraft:lever[powered=true] run setblock 311 70 -425 minecraft:air replace
+
+### Row 4 (9)
+/execute if block 303 74 -427 minecraft:lever[powered=false]
+/execute if block 304 74 -427 minecraft:lever[powered=true]
+/execute if block 306 74 -427 minecraft:lever[powered=false]
+/execute if block 307 74 -427 minecraft:lever[powered=true]
+/execute unless block 319 69 -425 minecraft:redstone_torch
+/setblock 319 70 -425 minecraft:redstone_torch replace
+/title @a title {"text":"Cell 9 unlocked.","color":"green"}
+
+/execute unless block 303 74 -427 minecraft:lever[powered=false] run setblock 319 69 -425 minecraft:air replace
+/execute unless block 304 74 -427 minecraft:lever[powered=true] run setblock 319 69 -425 minecraft:air replace
+/execute unless block 306 74 -427 minecraft:lever[powered=false] run setblock 319 69 -425 minecraft:air replace
+/execute unless block 307 74 -427 minecraft:lever[powered=true] run setblock 319 69 -425 minecraft:air replace
+
+### Row 5 (19)
+/execute if block 303 74 -427 minecraft:lever[powered=true]
+/execute if block 304 74 -427 minecraft:lever[powered=false]
+/execute if block 306 74 -427 minecraft:lever[powered=true]
+/execute if block 307 74 -427 minecraft:lever[powered=true]
+/execute unless block 319 69 -421 minecraft:redstone_torch
+/setblock 319 69 -421 minecraft:redstone_torch replace
+/title @a title {"text":"Cell 19 unlocked.","color":"green"}
+
+/execute unless block 303 74 -427 minecraft:lever[powered=true] run setblock 319 69 -421 minecraft:air replace
+/execute unless block 304 74 -427 minecraft:lever[powered=false] run setblock 319 69 -421 minecraft:air replace
+/execute unless block 306 74 -427 minecraft:lever[powered=true] run setblock 319 69 -421 minecraft:air replace
+/execute unless block 307 74 -427 minecraft:lever[powered=true] run setblock 319 69 -421 minecraft:air replace
+
+### Row 6 (18)
+/execute if block 303 74 -427 minecraft:lever[powered=true]
+/execute if block 304 74 -427 minecraft:lever[powered=false]
+/execute if block 306 74 -427 minecraft:lever[powered=true]
+/execute if block 307 74 -427 minecraft:lever[powered=false]
+/execute unless block 323 69 -423 minecraft:redstone_torch
+/setblock 323 69 -423 minecraft:redstone_torch replace
+/title @a title {"text":"Cell 18 unlocked.","color":"green"}
+
+/execute unless block 303 74 -427 minecraft:lever[powered=false] run setblock 323 69 -423 minecraft:air replace
+/execute unless block 304 74 -427 minecraft:lever[powered=false] run setblock 323 69 -423 minecraft:air replace
+/execute unless block 306 74 -427 minecraft:lever[powered=true] run setblock 323 69 -423 minecraft:air replace
+/execute unless block 307 74 -427 minecraft:lever[powered=false] run setblock 323 69 -423 minecraft:air replace
+
+
+### Row 7 (Zombies)
+/execute if block 298 72 -417 chest{Items:[]}
+/data modify block 298 72 -417 Items append value {id:"apple",Count:1}
+/setblock 300 72 -423 minecraft:air destroy
+/summon minecraft:zombie 298 72 -423 {CustomName:"\"Stefan\"", ArmorItems:[{id:"minecraft:leather_helmet",Count:1},{id:"minecraft:iron_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie 299 72 -423 {CustomName:"\"Piotr\"", ArmorItems:[{id:"minecraft:iron_helmet",Count:1},{id:"minecraft:leather_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie 297 72 -423 {CustomName:"\"Theodore\"", ArmorItems:[{id:"minecraft:chainmail_helmet",Count:1},{id:"minecraft:chainmail_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/summon minecraft:zombie 297 72 -424 {CustomName:"\"Brute\"", ArmorItems:[{id:"minecraft:chainmail_helmet",Count:1},{id:"minecraft:chainmail_chestplate",Count:1}],HandItems:[{id:"minecraft:stone_sword",Count:1}]}
+/title @a title {"text":"Noise coming from the dungeon exit!","color":"yellow"}
+
+### Row 8 (Stables)
+/execute if block 283 79 -408 minecraft:spruce_pressure_plate[powered=true]
+/setblock 283 79 -408 minecraft:air replace
+/setblock 281 79 -406 minecraft:air replace
+/setblock 281 80 -406 minecraft:air replace
+/title @a title {"text":"Secret of the Stables revealed.","color":"green"}
+
+### Row 9 (smithy)
+execute if entity @e[type=armor_stand, x=288, y=79, z=-425, dx=0, dy=0, dz=0, limit=1, nbt={ArmorItems: [{id:"minecraft:leather_boots"},{id:"minecraft:chainmail_leggings"},{id:"minecraft:leather_chestplate"},{id:"minecraft:golden_helmet"}]}]
+execute if entity @e[type=armor_stand, x=290, y=79, z=-425, dx=0, dy=0, dz=0, limit=1, nbt={ArmorItems: [{id:"minecraft:leather_boots"},{id:"minecraft:chainmail_leggings"},{id:"minecraft:leather_chestplate"},{id:"minecraft:turtle_helmet"}]}]
+/setblock 289 77 -426 minecraft:redstone_torch replace
+/title @a title {"text":"Secret of the Smithy revealed.","color":"green"}
+
+
+### Row 10 (Main doors)
+/execute if entity @e[type=item_frame, x=303, y=84, z=-424, dx=0, dy=0, dz=0, limit=1, nbt={Item:{id:"minecraft:spyglass"}}]
+/execute if entity @e[type=item_frame, x=304, y=84, z=-424, dx=0, dy=0, dz=0, limit=1, nbt={Item:{id:"minecraft:piglin_head"}}]
+/execute if entity @e[type=item_frame, x=305, y=84, z=-424, dx=0, dy=0, dz=0, limit=1, nbt={Item:{id:"minecraft:pumpkin_pie"}}]
+/execute if entity @e[type=item_frame, x=306, y=84, z=-424, dx=0, dy=0, dz=0, limit=1, nbt={Item:{id:"minecraft:dragon_head"}}]
+/execute unless block 304 80 -425 minecraft:redstone_torch
+/setblock 304 80 -425 minecraft:redstone_torch replace
+/setblock 305 80 -425 minecraft:redstone_torch replace
+/title @a title {"text":"Welcome to the Mansion!","color":"green"}
+
+
+### Row 11 (Add arrows to empty chest)
+/execute if block 302 94 -430 chest{Items:[]}
+/data modify block 302 94 -430 Items append value {id:"minecraft:arrow",Count:64}
+
+### Target (in place)
+/setblock 297 81 -435 minecraft:air replace
+/setblock 297 82 -435 minecraft:air replace
+/title @a title {"text":"The cake is a lie!","color":"green"}
+
+
+
+### CORRECT FINALE
+#### BUTTONS YELLOW BLUE RED GREEN FAIL
+/setblock 230 63 -428 redstone_block replace
+/setblock 230 63 -434 redstone_block replace
+/setblock 230 63 -440 redstone_block replace
+/setblock 230 63 -446 redstone_block replace
+/setblock 230 63 -451 redstone_block replace
+
+
+
+### YELLOW SET
+/fill 232 63 -426 229 63 -449 air replace redstone_block
+/setblock 232 63 -434 redstone_block replace
+/setblock 300 84 -449 redstone_lamp[lit=true] replace
+
+### BLUE SET
+/fill 232 63 -426 229 63 -449 air replace redstone_block
+/setblock 232 63 -440 redstone_block replace
+/setblock 301 84 -449 redstone_lamp[lit=true] replace
+
+### RED SET
+/fill 232 63 -426 229 63 -449 air replace redstone_block
+/setblock 232 63 -446 redstone_block replace
+/setblock 302 84 -449 redstone_lamp[lit=true] replace
+
+### GREEN SET
+/fill 300 84 -449 306 84 -449 redstone_lamp[lit=true] replace
+/setblock 295 80 -448 air replace
+/setblock 295 79 -448 air replace
+/setblock 294 80 -442 air replace
+/setblock 294 79 -442 air replace
+/title @a title {"text":"Hidden passage in fireplace opened.","color":"green"}
+
+
+### RESET
+/fill 232 63 -426 229 63 -449 air replace redstone_block
+/fill 300 84 -449 306 84 -449 redstone_lamp replace
+/setblock 295 80 -448 redstone_block replace
+/setblock 295 79 -448 redstone_block replace
+/setblock 294 80 -442 redstone_block replace
+/setblock 294 79 -442 redstone_block replace
+/title @a title {"text":"Oh no...","color":"yellow"}
+/setblock 230 63 -451 air replace
+/setblock 232 63 -428 redstone_block replace
+
+
+
+
+### Zombies
+
+#### Dungeon — after doors (on mace pickup)
